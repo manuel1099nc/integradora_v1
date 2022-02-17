@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*Agregamos estilo al quien somos*/
+
+.estiloQuienesSomos {
+    font-family: Kaushan Script;
+    text-transform: uppercase and lowercase;
+    font-size: 3.8em;
+    margin-top: -28px;
+    display: inline-block;
+    position: relative;
+}
+
+.estiloQuienesSomos::after,
+.estiloQuienesSomos::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.estiloQuienesSomos::before {
+    left: -385px;
+}
+
+.estiloQuienesSomos::after {
+    right: -385px;
+}
+
+
+/*Agregamos el estilo para la parte de estilos*/
+
+.estiloDeEstilos {
+    font-family: Kaushan Script;
+    text-transform: uppercase and lowercase;
+    font-size: 3.8em;
+    margin-top: -28px;
+    display: inline-block;
+    position: relative;
+}
+
+.estiloDeEstilos::after,
+.estiloDeEstilos::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.estiloDeEstilos::before {
+    left: -390px;
+}
+
+.estiloDeEstilos::after {
+    right: -390px;
+}
+
+
+/*Agregamos el estilo para la parte de Accesorios*/
+
+.estiloDeAccesorios {
+    font-family: Kaushan Script;
+    text-transform: uppercase and lowercase;
+    font-size: 3.8em;
+    margin-top: -28px;
+    display: inline-block;
+    position: relative;
+}
+
+.estiloDeAccesorios::after,
+.estiloDeAccesorios::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.estiloDeAccesorios::before {
+    left: -390px;
+}
+
+.estiloDeAccesorios::after {
+    right: -390px;
+}
+
+.justificarTexto {
+    text-align: justify;
+}
+
+.estilo2 {
+    font-family: Kaushan Script;
+    text-transform: uppercase;
+}
