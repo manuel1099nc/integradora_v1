@@ -46,13 +46,15 @@ OSEA QUE NO ME DEJE
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{url('welcome')}}"><img src="../estilos/imagenes/icon.png" alt=""> Cocinas
+                        <!--PARA VISTAS CON PROCESOS SE USA ROUTE, 
+                    Y PARA MANDAR A LLAMAR A OTRAS VISTAS SE USA URL-->
+                        <a class="navbar-brand" href="{{url('/')}}"><img src="../estilos/imagenes/icon.png" alt=""> Cocinas
                             <div class="logoCaption">Integrales Mónica</div>
                         </a>
                     </div>
                     <div class="navbar-collapse collapse ">
                         <ul class="nav navbar-nav">
-                            <li><a class="waves-effect waves-dark" href="index.html">Inicio</a></li>
+                            <li><a class="waves-effect waves-dark" href="{{url('/')}}">Inicio</a></li>
                             <li><a class="waves-effect waves-dark" href="#QuienesSomos">¿Quiénes somos?</a></li>
                             <!--<li class="dropdown">
                                 <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">About Us <b class="caret"></b></a>
@@ -246,26 +248,26 @@ OSEA QUE NO ME DEJE
 
         </div>
 
+
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide" src="../estilos/imagenes/img2.jpg" alt="First slide">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
                     <div class="container">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
-                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="second-slide" src="../estilos/imagenes/img9.jpg" alt="Second slide">
+                <div class="carousel-item active carousel-item-left">
+                    <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -274,10 +276,10 @@ OSEA QUE NO ME DEJE
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="third-slide" src="../estilos/imagenes/img1.jpg" alt="Third slide">
+                <div class="carousel-item carousel-item-next carousel-item-left">
+                    <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
                     <div class="container">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption text-right">
                             <h1>One more for good measure.</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -285,15 +287,16 @@ OSEA QUE NO ME DEJE
                     </div>
                 </div>
             </div>
-            <a class="carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class=" carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div><!-- /.carousel -->
+        </div>
+
 
 
         <div class="container">
@@ -315,6 +318,7 @@ OSEA QUE NO ME DEJE
                 <button class="btn btn-success">Extraibles</button>
 
             </div>
+        </div>
 
 
     </section>

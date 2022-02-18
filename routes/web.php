@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\CitasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
-    Route::resource('/productos',ProductoController::class);
+    Route::resource('/productos',ProductoController::class);//AQUI SE MANDA A LLAMAR AL CONTROLADOR RECIEN CREADO
+    Route::resource('/citas',CitasController::class);//AQUI SE MANDA A LLAMAR AL CONTROLADOR RECIEN CREADO
     Route::get('/dashboard',function(){
         return view('dashboard');
     })->name('dashboard');

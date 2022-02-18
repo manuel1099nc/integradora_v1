@@ -14,3 +14,4 @@
         </div>
     </div>
 </x-app-layout>
+<link href="../estilos/imagenes/cocinasIntegrales.png" rel="shortcut icon" type="image/">
